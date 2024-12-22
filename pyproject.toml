@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "synthic"
+version = "0.1.0"
+description = "Synthetic data generation based on SQLAlchemy models"
+authors = ["Pavel.Groshev <pavluxa@xmail.ru>"]
+readme = "README.md"
+
+[project]
+name = "synthic-loguru"
+description = "Synthetic data generation based on SQLAlchemy models"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["synthetic", 'data', 'generation', 'sqlalchemy', 'generate', "model"]
+license = {text = "MIT License"}
+dynamic = ["version"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.36"
+faker = "^33.1.0"
+ruff = "^0.8.4"
+mypy = "^1.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
